@@ -1,42 +1,38 @@
+*{
+    font-family: Areal;
+    margin: 0;
+    padding: 0;
+}
 body {
     background: url('../images/bgImg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
 }
 
-table {
-    width: 100%;
-    padding: 0;
-    border-collapse: collapse;
+header {
+    margin: 0;
 }
 
-.menuWrap {
+.head {
     width: 100%;
     height: 79px;
-    /*background-color: #3C3F41;*/
     background: linear-gradient(to top, #3C3F41 0%, #5d6062 100%);
     padding: 0;
+    margin: 0;
 }
 
-a.logo {
-    float: left;
-    font-variant: small-caps;
+.head ul {
+    margin: 0;
+    padding: 0; 
+}
+
+.head ul li {
+    list-style: none;
     display: block;
-    border: 0;
-    text-decoration: none;
-    
-    height: 75px;
-    width: 75px;
-    margin-top: 3px;
-    margin-left: 20%;
-    background-image: url(../images/logo.png);
+    margin: 0;
+    padding: 0;
 }
 
 a.lin:hover, a.lin:active { /*нажали мышкой/навели мышкой*/
@@ -74,25 +70,42 @@ a.lin:link, a.lin:visited { /*посещенная и не посещенная*
     line-height: 70px;
 }
 
-.mainInfo {
+table {
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+a.logo {
+    float: left;
+    display: block;
+    border: 0;
+    text-decoration: none;
+    
+    height: 75px;
+    width: 75px;
+    margin-top: 3px;
+    margin-left: 20%;
+    background-image: url(../images/logo.png);
+}
+
+.mainBody {
+    display: block;
+    height: 100%;
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    /*margin-left: 10%;*/
     background-color: #EDEEEA;
     margin-top: 0;
     padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 img.full {
     height: 100%;
     width: 100%;
     margin: 0;
-    margin-top: 0;
-}
-
-.mainTd {
-    padding: 0;
-    margin: 0;
-    
 }
 
 #welcome {
@@ -105,13 +118,32 @@ img.full {
 }
 
 div.divText {
+    display: block;
+    height: 150px;
     margin-left: 20px;
     margin-right: 40px;
+    margin-top: 10px;
+}
+div.divTextContact {
+    display: block;
+    height: 350px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+article.divText {
+    display: block;
+    height: 170px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .textIndex {
     font-size: 23px;
     color: #6a5444;
+    margin-top: 10px;
 }
 
 hr.bold {
@@ -141,19 +173,20 @@ img.newsMain {
 .text {
     font-size: 15px;
     color: #745E4E;
+    margin-top: 10px;
 }
 
 .downPanel {
-    margin-top: 120px;
     background: linear-gradient(to top, #000000 0%, #272725 100%);
     height: 70px;
+    width: 80%;
+    margin: auto;
 }
 
 .textDown {
     color: #464644;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 75px;
     padding-top: 15px;
     font-size: 14px;
 }
@@ -211,6 +244,28 @@ a.fbImg {
     width: 30px;
     background-image: url(../images/gmail.png);
 }
+a.TwitchImg {
+    float: left;
+    display: block;
+    border: 0;
+    text-decoration: none;
+    
+    margin-left: 10px;
+    height: 28px;
+    width: 28px;
+    background-image: url(../images/twitch28.png);
+}
+a.YouTubeImg {
+    float: left;
+    display: block;
+    border: 0;
+    text-decoration: none;
+    
+    margin-left: 10px;
+    height: 28px;
+    width: 28px;
+    background-image: url(../images/YouTube28.png);
+}
 
 .year {
     padding: 0;
@@ -226,9 +281,6 @@ a.fbImg {
     text-decoration: underline;
 }
 
-*{
-    font-family: Areal;
-}
 .b-container{
     width:200px;
     height:200px;
@@ -249,46 +301,52 @@ a.fbImg {
 .b-popup .b-popup-content{
     margin:40px auto 0px auto;
     width:350px; /*высота и ширина самого окна*/
-    height: 385px;
-    padding:10px;
+    height: 400px;
+    padding: 0;
     background-color: #c5c5c5;
-    border-radius:5px;
+    border-radius: 5px;
     box-shadow: 0px 0px 10px #000;
 }
 
-topWindowPanel {
-    border: 0;
+.topWindowPanel {
+    border-radius: 5px;
     background-color: #464646;
-    width: 100%;
+    width: 330px;
     height: 30px;
-    padding: 0;
+    padding: 10px;
     margin: 0;
+}
+.topWindowPanel li {
+    width: 50%;
+    list-style: none;
+    display: inline-block;
+    float: left;
+    color: white;
+    font-size: 20px;
+    font-family: Tahoma;
 }
 
 a.cancelImg {
+    float: right;
     display: block;
     border: 0;
     text-decoration: none;
     
     height: 25px;
     width: 25px;
-    background-image: url(../images/cancel.png);
+    background-image: url(../images/cancel1.png);
 }
 
-topPanel {
-    background-color: #646464;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+#form {
+    padding: 10px;
 }
 
-colum1 {
-    height: 100%;
-    width: 80%;
-}
-
-colum2 {
-    height: 100%;
-    width: 20%;
+.submitButton {
+    margin-top: 5px;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
