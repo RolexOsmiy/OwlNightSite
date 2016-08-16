@@ -350,3 +350,24 @@ a.cancelImg {
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5)
 }
+
+/*выпадающее меню*/
+ul.dropdown li { position: relative; }
+ul.dropdown, ul.dropdown-inside {list-style-type: none; padding: 0;}
+ul.dropdown-inside {
+     border-radius: 5px;
+     margin-top: 77px;
+     margin-left: 17px;
+     position: absolute;
+     left: -9999px;
+ }
+ul.dropdown-inside a {padding: 3px 10px 4px;}
+ul.dropdown li.dropdown-top {display: inline; float: left;}
+ul.dropdown li.dropdown-top a {display: block; color: white; text-decoration: none;}
+ul.dropdown li.dropdown-top:hover .dropdown-inside {display: block; left: 0;}
+ul.dropdown .dropdown-inside { background: linear-gradient(to top, #3C3F41 0%, #5d6062 100%); }/*цыет фона*/
+ul.dropdown .dropdown-inside a:hover {
+    background: radial-gradient(ellipse, black, #66696b);
+    border-radius: 5px;
+    text-decoration: underline;
+}
