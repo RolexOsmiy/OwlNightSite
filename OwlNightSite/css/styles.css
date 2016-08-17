@@ -50,7 +50,6 @@ header {
     font-size: 25px;
     text-align: center;
     background: radial-gradient(ellipse, black, #66696b);
-    border-radius: 10px;
     line-height: 70px;
 }
 a.lin:link, a.lin:visited { /*посещенная и не посещенная*/
