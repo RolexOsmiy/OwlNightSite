@@ -35,7 +35,7 @@ header {
     padding: 0;
 }
 
-a.lin:hover, a.lin:active { /*нажали мышкой/навели мышкой*/
+.qwe, a.lin:hover, a.lin:active { /*нажали мышкой/навели мышкой*/
     float: left;
     font-variant: small-caps;
     display: block;
@@ -91,9 +91,9 @@ a.logo {
 
 .mainBody {
     display: block;
+    margin: 0 auto;
     height: 100%;
     width: 80%;
-    margin: 0 auto;
     /*margin-left: 10%;*/
     background-color: #EDEEEA;
     margin-top: 0;
@@ -168,6 +168,11 @@ img.newsMain {
     margin-top: 12px;
     margin-right: 25px;
     margin-bottom: 25px;
+}
+.clearfix:after {
+     content: '';
+     display: block;
+     clear: both;
 }
 
 .text {
@@ -348,26 +353,46 @@ a.cancelImg {
     border-radius: 5px;
     font-size: 15px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 /*выпадающее меню*/
 ul.dropdown li { position: relative; }
 ul.dropdown, ul.dropdown-inside {list-style-type: none; padding: 0;}
 ul.dropdown-inside {
-     border-radius: 5px;
-     margin-top: 77px;
-     margin-left: 17px;
-     position: absolute;
-     left: -9999px;
+    border-radius: 5px;
+    margin-top: 77px;
+    margin-left: 0px;
+    position: absolute;
+    left: -9999px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 5px;
  }
 ul.dropdown-inside a {padding: 3px 10px 4px;}
 ul.dropdown li.dropdown-top {display: inline; float: left;}
 ul.dropdown li.dropdown-top a {display: block; color: white; text-decoration: none;}
-ul.dropdown li.dropdown-top:hover .dropdown-inside {display: block; left: 0;}
+ul.dropdown li.dropdown-top:hover .dropdown-inside {display: block; left: 0; width: 100%;}
 ul.dropdown .dropdown-inside { background: linear-gradient(to top, #3C3F41 0%, #5d6062 100%); }/*цыет фона*/
 ul.dropdown .dropdown-inside a:hover {
     background: radial-gradient(ellipse, black, #66696b);
     border-radius: 5px;
     text-decoration: underline;
+}
+ul.dropdown li.dropdown-top img {display: block; float: left; margin-right: 5px; }
+
+.unknown {
+    margin-left: 25px;
+}
+
+.newsBlock {
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+}
+.newsInside {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
 }
